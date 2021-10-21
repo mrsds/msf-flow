@@ -141,7 +141,8 @@ def replace_template(template, cur_date):
                  "%d": "{:02d}".format(cur_date.day),
                  "%H": "{:02d}".format(cur_date.hour),
                  "%M": "{:02d}".format(cur_date.minute),
-                 "%S": "{:02d}".format(cur_date.second)}
+                 "%S": "{:02d}".format(cur_date.second),
+                 "%j": "{:03d}".format(cur_date.timetuple().tm_yday)}
     formatted_str = template
     for key, val in trans_key.items():
         formatted_str = formatted_str.replace(key, val)

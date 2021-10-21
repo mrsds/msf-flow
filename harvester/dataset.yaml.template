@@ -13,6 +13,7 @@
 #   %H : 2-digit hour in {00, 01, ..., 23}
 #   %M : 2-digit minute in {00, 01, ..., 59}
 #   %S : 2-digit second in {00, 01, ..., 59}
+#   %j : 3-digit day of year in {001, 002, ...}
 #
 # For the time resolution setting, use an integer number of one of the
 # following units:
